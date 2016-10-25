@@ -1,0 +1,4 @@
+## insert hosts you want to manage
+[ansible]
+localhost
+

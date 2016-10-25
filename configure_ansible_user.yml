@@ -1,0 +1,10 @@
+---
+# The main playbook to Configure an ansible user
+
+- name: Provision ansible user
+  hosts: all
+  pre_tasks:
+    - include_vars: host_vars/{{ansible_hostname}}
+  roles:
+    - setup_ansible_user
+
